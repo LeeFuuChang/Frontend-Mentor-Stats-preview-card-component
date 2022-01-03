@@ -14,7 +14,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ### Screenshots
 | Mobile | Desktop |
 | :-: | :-: |
-|![](https://i.imgur.com/oIlNXO5.jpg)|![](https://i.imgur.com/nONcszo.jpg)|
+|![](https://i.imgur.com/vjMMZRo.jpg)|![](https://i.imgur.com/HQXHojw.jpg)|
 ### Links
 - Challenge URL: [Teleport](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)
 - Solution URL: [Teleport](https://github.com/LeeFuuChang/Frontend-Mentor-Stats-preview-card-component)
