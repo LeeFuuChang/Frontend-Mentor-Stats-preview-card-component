@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+
+  <div class="card" role="main">
+    <div class="card-info">
+      <h1 class="card-info-title">Get <span class="card-info-title-highlight">insights</span> that help your business grow.</h1>
+      <p class="card-info-description">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+      <div class="card-info-stat">
+        <div class="card-info-stat-statbox">
+          <h2 class="card-info-stat-statbox-title">10k+</h2>
+          <p class="card-info-stat-statbox-description">companies</p>
+        </div>
+        <div class="card-info-stat-statbox">
+          <h2 class="card-info-stat-statbox-title">314</h2>
+          <p class="card-info-stat-statbox-description">templates</p>
+        </div>
+        <div class="card-info-stat-statbox">
+          <h2 class="card-info-stat-statbox-title">12M+</h2>
+          <p class="card-info-stat-statbox-description">queries</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-preview">
+      <img src="images/image-header-mobile.jpg" alt="img mobile" class="card-preview-img">
+      <!-- <img src="images/image-header-desktop.jpg" alt="img desktop" class="card-preview-img"> -->
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">LeeFuuChang</a>.
+  </div>
+</body>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif; */
+  }
+
+  body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    width: 100%;
+    min-height: 100vh;
+    background: #090b1a;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    height: min-content;
+    background: #1b1938;
+  }
+
+  .card .card-preview {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: min-content;
+  }
+  .card .card-preview .card-preview-img {
+    width: 100%;
+  }
+
+  .card .card-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin: 30px;
+    width: 75%;
+    height: min-content;
+    color: #ffffff;
+  }
+  .card .card-info .card-info-title {
+    position: relative;
+    margin: 5px 0;
+  }
+  .card .card-info .card-info-title .card-info-title-highlight {
+    color: #ad5edd;
+  }
+
+  .card .card-info .card-info-description {
+    position: relative;
+    margin: 5px 0;
+    color: #5d5b71;
+  }
+
+  .card .card-info .card-info-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    width: 100%;
+  }
+  .card .card-info .card-info-stat .card-info-stat-statbox {
+    margin: 17px;
+    width: 100%;
+    height: min-content;
+  }
+  .card .card-info .card-info-stat .card-info-stat-statbox .card-info-stat-statbox-description {
+    color: #5d5b71;
+  }
+
+
+  .attribution { position:relative; top:40px; color:#ffffff; font-size: 11px; text-align: center; }
+  .attribution a { color: rgb(125, 142, 207); }
+
+  @media (min-width: 84rem) {
+    .card {
+      flex-direction: row;
+      width: 1440px;
+      height: 100%;
+    }
+    .card .card-info {
+      text-align: left;
+      margin: 35px;
+    }
+    .card .card-info .card-info-title {
+      margin: 15px 35px;
+    }
+    .card .card-info .card-info-description {
+      margin: 15px 35px;
+      line-height: 24px;
+    }
+    .card .card-info .card-info-stat {
+      padding: 35px;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+</style>
+</html>
